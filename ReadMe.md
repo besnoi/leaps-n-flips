@@ -1,4 +1,8 @@
-![commit4](assets/others/logoImg.png) 🎮
+
+<p align="center">
+<img src="assets/others/logoImg.png"/>🎮<br/>
+</p>
+
 -------------------
 This is my entry for Github Game-Off 2019!! This is an infinite-runner platformer game in which you have two worlds - one warm and good  and other dark and evil!! Which resembles the modern-life too which somehow is a balance of the two worlds!
 
