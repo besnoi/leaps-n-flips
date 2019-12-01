@@ -13,7 +13,7 @@ This is my entry for Github Game-Off 2019!! This is an infinite-runner platforme
 
 ### Build 📦
 
-You don't need to compile or build anything. Just install [LÖVE](https://love2d.org/) and then just *run* the game!
+You don't need to compile or build anything. Just install [LÖVE](https://love2d.org/) and then just *run* the game! For precompiled binaries visit [itch.io page](https://youngneer.itch.io/leaps-n-flips)
 
 ### Start 🏁
 
