@@ -1,6 +1,6 @@
 PlayState=State()
 
-local LIMIT_KEY_PRESS_TIME,FLIP_TIME=.5,1
+local LIMIT_KEY_PRESS_TIME,FLIP_TIME=.3,.7
 
 function PlayState:enter(params)
 	self.player=Character()

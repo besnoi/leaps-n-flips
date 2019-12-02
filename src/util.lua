@@ -18,10 +18,9 @@ push:setupScreen(WINDOW_WIDTH,WINDOW_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
 })
 
 gStateMachine=StateMachine{
-	['splash']=function() return SplashScreenState() end,
 	['main-menu']=function() return MainMenuState() end,
 	['play']=function() return PlayState() end,
 	['game-over']=function() return GameOverState() end
-}:switch('splash')
+}:switch('main-menu')
 
 love.window.setTitle("Leaps N Flips!")

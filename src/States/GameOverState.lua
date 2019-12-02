@@ -103,4 +103,5 @@ function GameOverState:exit()
 	gSounds['sadViolin']:stop()
 	gSounds[self.player.current..'_crying']:stop()
 	gSounds['music']:play()
+	CRATE_IMG=random(1,2)==1 and gImages['light_crate_three'] or gImages['mixed_crate_one']
 end

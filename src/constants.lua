@@ -14,7 +14,7 @@ initPos={
 random=love.math.random
 
 JUMP_SPEED,JUMP_HEIGHT=500,200
-
+CRATE_IMG=random(1,5)==1 and gImages['light_crate_three'] or gImages['mixed_crate_one']
 CRATE_Y,CRATE_SPEED=308,500
 CRATE_WIDTH,CRATE_HEIGHT=90,89
 

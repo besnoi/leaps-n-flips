@@ -79,7 +79,7 @@ function Obstacles:generateCrate(dir)
 			)*CRATE_WIDTH
 	))
 
-	if random(5)==1 then
+	if random(3)==1 then
 		table.insert(crates,Crate(
 			crates[#crates].x,
 			crates[#crates].y-CRATE_HEIGHT
@@ -91,17 +91,28 @@ function Obstacles:generateCrate(dir)
 			))
 		end
 	else
-		
-		table.insert(crates,Crate(
-			crates[#crates].x+CRATE_WIDTH
-		))
-		crates[#crates-1].next=crates[#crates]
+		if random(3)==1 then
+			table.insert(crates,Crate(
+				crates[#crates].x,
+				crates[#crates].y-CRATE_HEIGHT
+			))
+		end
+		if random(2)==1 then
+			table.insert(crates,Crate(
+				crates[#crates].x+CRATE_WIDTH
+			))
+			if random(4)==1 then
+				table.insert(crates,Crate(
+					crates[#crates].x,
+					crates[#crates].y-CRATE_HEIGHT
+				))
+			end
+		end
 
 		if random(3)==1 then
 			table.insert(crates,Crate(
 				crates[#crates].x+CRATE_WIDTH
 			))
-			crates[#crates-1].next=crates[#crates]
 			if random(2)==1 then
 				table.insert(crates,Crate(
 					crates[#crates].x,

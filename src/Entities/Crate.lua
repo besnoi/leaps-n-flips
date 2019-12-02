@@ -17,6 +17,6 @@ function Crate:render()
 			love.graphics.rectangle('line',self.x,self.y,CRATE_WIDTH,CRATE_HEIGHT)
 			love.graphics.setColor(1,1,1)
 		end
-		love.graphics.draw(gImages['mixed_crate_one'],self.x,self.y,0,1,self.sy)
+		love.graphics.draw(CRATE_IMG,self.x,self.y,0,1,self.sy)
 	end
 end

@@ -11,7 +11,7 @@ function World:init(background)
     self.scoreBoard=ScoreBoard()
     self.scoreTimer=0
     self.obstacles=Obstacles()
-    self.scoreIncrement=1
+    self.scoreIncrement=-1
 end
 
 function World:flip()
