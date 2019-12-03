@@ -100,7 +100,7 @@ function PlayState:updatePlayer(dt)
 
 		--player can only hit the crate from side if he's jumping!!
 		for _,crate in ipairs(self.world.obstacles.upperCrates) do
-			if euler.aabb(crate.x,crate.y,CRATE_WIDTH,CRATE_HEIGHT,player.x,player.y,
+			if euler.aabb(crate.x+5,crate.y+40,CRATE_WIDTH,CRATE_HEIGHT,player.x,player.y,
 			   player.actor:getDimensions()) then 
 				return self:killPlayer()
 			end
@@ -115,7 +115,7 @@ function PlayState:updatePlayer(dt)
 		player.y=player.y+JUMP_SPEED*dt
 		-- kill the player if he hits from side and make him run if he hits from top!
 		for _,crate in ipairs(self.world.obstacles.upperCrates) do
-			if euler.lineInRect(crate.x,crate.y+30,crate.x,crate.y+CRATE_HEIGHT,
+			if euler.lineInRect(crate.x+5,crate.y+40,crate.x,crate.y+CRATE_HEIGHT,
 			  player.x,player.y,player.actor:getDimensions()) then
 				return self:killPlayer()
 			elseif euler.lineInRect(crate.x,crate.y,crate.x+CRATE_WIDTH,crate.y,
